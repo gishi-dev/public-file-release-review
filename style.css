@@ -1,0 +1,27 @@
+:root{font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;color:#213535;background:#eef3f1;line-height:1.65;font-size:15px}*{box-sizing:border-box}body{margin:0}header{background:#173e40;color:#fff;padding:30px max(28px,calc((100vw - 1440px)/2));border-bottom:6px solid #d7b877}h1{font-size:27px;margin:6px 0}h2{font-size:21px;margin:0 0 18px}h3{font-size:17px;margin:8px 0 16px}p{margin:8px 0 14px}.eyebrow{font-size:13px;letter-spacing:.08em;margin:0;color:#bcd5ce}main{max-width:1500px;margin:auto;padding:26px}section{background:#fff;border:1px solid #cedbd6;border-radius:10px;padding:24px;margin-bottom:22px}.notice{background:#fbf5e6;border-left:4px solid #ae8137;border-radius:4px;padding:14px 18px}.notice p:last-child{margin-bottom:0}.muted{color:#536963}.toolbar{display:flex;align-items:center;gap:22px;flex-wrap:wrap}.stats{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}.stat{background:#eaf3ef;padding:12px 18px;border-radius:6px}.stat strong{font-size:23px;display:block}.columns{display:grid;grid-template-columns:1fr 1fr;gap:24px}article{padding:20px;background:#f7faf8;border:1px solid #d9e4df;border-radius:7px;min-width:0}article .eyebrow{color:#36675c}.table-wrap{overflow:auto;max-height:740px;border:1px solid #d5e0dc}table{width:100%;border-collapse:collapse;font-size:13px}th{background:#e8f0ec;text-align:left;position:sticky;top:0;z-index:1}td,th{padding:12px;vertical-align:top;border-bottom:1px solid #d9e4df}td:first-child{width:31%}td strong{overflow-wrap:anywhere}small{display:block;color:#576e65;margin-top:4px}.date{white-space:nowrap}label{display:block;margin:10px 0}select,input,textarea,button{font:inherit}select,input[type=date],textarea,input[type=text]{border:1px solid #9fb4aa;border-radius:4px;padding:8px;background:white;color:#203e35;max-width:100%}select,input[type=text],textarea{width:100%}.toolbar select,#scope{width:auto}textarea{display:block;resize:vertical}button{border:1px solid #29564b;background:#285d50;color:white;border-radius:5px;padding:8px 14px;cursor:pointer;margin:8px 5px 8px 0}button:hover{background:#1d493f}button:disabled{opacity:.5;cursor:default}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #ae8137;outline-offset:3px}fieldset{border:1px solid #c2d3c9;margin:16px 0}.check{display:flex;align-items:flex-start;gap:8px}.check input{margin-top:7px;flex-shrink:0}.pre{white-space:pre-wrap;overflow-wrap:anywhere}.message{color:#803b22;white-space:pre-wrap;margin:8px 0;min-height:1.6em}details{margin:16px 0}summary{cursor:pointer;font-weight:600}.edit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}#selectedPath{font-family:ui-monospace,monospace;color:#326d5b;overflow-wrap:anywhere}.blocker-items{max-height:11.55em;overflow:auto}footer{padding:0 26px 30px;text-align:center;color:#536963}@media(max-width:900px){.columns,.edit-grid{grid-template-columns:1fr}main{padding:12px}section{padding:16px}h1{font-size:23px}}
+.review-columns{display:grid;grid-template-columns:.8fr 1fr 1.25fr;gap:18px}@media(max-width:900px){.review-columns{grid-template-columns:1fr}.review-columns article{padding:18px}}
+.source-field{margin-bottom:12px}
+.decision-entry{margin-top:24px;max-width:760px}
+#cases{padding:0;margin:0;list-style:none}
+#cases li{border-top:1px solid #d9e4df;padding:10px 0}
+#cases button{margin-bottom:0}
+#cases strong{overflow-wrap:anywhere}
+#ticketPreview{max-height:310px;overflow:auto;padding:14px;background:#f7faf8}
+td button{white-space:nowrap}
+.file-path span{white-space:nowrap}
+@media(min-width:901px){
+  #review:has(#teachingNote:not([hidden])){
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    gap:0 24px;
+    align-items:start;
+  }
+  #review:has(#teachingNote:not([hidden])) > :is(h2,h3){grid-column:1/-1}
+  #review:has(#teachingNote:not([hidden])) .review-columns{grid-template-columns:1fr}
+  #review:has(#teachingNote:not([hidden])) .decision-entry{margin-top:0}
+  #review:has(#teachingNote:not([hidden])) #selectedSource{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0 12px;
+  }
+}

@@ -1,0 +1,584 @@
+{
+  "initial": [
+    {
+      "path": "public/index.html",
+      "type": "HTML",
+      "purpose": "店舗案内の入口",
+      "creator": "制作会社の担当",
+      "created": "2026-11-01",
+      "intent": "決めた"
+    },
+    {
+      "path": "public/styles/site.css",
+      "type": "CSS",
+      "purpose": "店舗案内の装飾",
+      "creator": "制作会社の担当",
+      "created": "2026-11-02",
+      "intent": "決めた"
+    },
+    {
+      "path": "public/exports/members-2026-11-01.csv",
+      "type": "会員データ",
+      "purpose": "会員一覧の引き継ぎ用書き出し",
+      "creator": "E03 受付",
+      "created": "2026-11-09",
+      "intent": "決めていない"
+    },
+    {
+      "path": "public/backup/before-work.zip",
+      "type": "ZIP",
+      "purpose": "作業前バックアップ",
+      "creator": "保守担当",
+      "created": "2026-11-12",
+      "intent": "決めていない"
+    },
+    {
+      "path": "public/config/store.env",
+      "type": "設定",
+      "purpose": "店舗サイトの実行設定の控え",
+      "creator": "保守担当",
+      "created": "2026-11-14",
+      "intent": "決めていない"
+    },
+    {
+      "path": "public/notes/handover.md",
+      "type": "メモ",
+      "purpose": "制作会社との引き継ぎメモ",
+      "creator": "E05 Web担当",
+      "created": "2026-11-16",
+      "intent": "決めていない"
+    },
+    {
+      "path": "public/images/shop.jpg",
+      "type": "画像",
+      "purpose": "店舗外観の公開用画像",
+      "creator": "E05 Web担当",
+      "created": "2026-11-03",
+      "intent": "決めた"
+    },
+    {
+      "path": "public/images/access.jpg",
+      "type": "画像",
+      "purpose": "来店経路の公開用画像",
+      "creator": "E05 Web担当",
+      "created": "2026-11-04",
+      "intent": "決めた"
+    },
+    {
+      "path": "public/docs/guide.pdf",
+      "type": "PDF",
+      "purpose": "店内利用案内の公開資料",
+      "creator": "E01 店長",
+      "created": "2026-11-05",
+      "intent": "決めた"
+    },
+    {
+      "path": "public/docs/event.pdf",
+      "type": "PDF",
+      "purpose": "公開を決めた催事案内",
+      "creator": "E02 副店長",
+      "created": "2026-11-06",
+      "intent": "決めた"
+    },
+    {
+      "path": "public/calendar/open-days.csv",
+      "type": "CSV",
+      "purpose": "一般公開を決めた営業日カレンダー",
+      "creator": "E05 Web担当",
+      "created": "2026-11-07",
+      "intent": "決めた"
+    },
+    {
+      "path": "public/downloads/print-kit.zip",
+      "type": "ZIP",
+      "purpose": "一般公開を決めた案内画像の配布用一式",
+      "creator": "E05 Web担当",
+      "created": "2026-11-08",
+      "intent": "決めた"
+    },
+    {
+      "path": "public/exports/members-2026-11-08.csv",
+      "type": "会員データ",
+      "purpose": "会員一覧の集計前書き出し",
+      "creator": "E04 受付",
+      "created": "2026-11-10",
+      "intent": "決めていない"
+    },
+    {
+      "path": "public/exports/members-2026-11-15.csv",
+      "type": "会員データ",
+      "purpose": "会員一覧の月中確認用書き出し",
+      "creator": "E03 受付",
+      "created": "2026-11-11",
+      "intent": "不明"
+    },
+    {
+      "path": "public/backup/layout-old.zip",
+      "type": "ZIP",
+      "purpose": "レイアウト変更前のバックアップ",
+      "creator": "制作会社の担当",
+      "created": "2026-11-13",
+      "intent": "不明"
+    },
+    {
+      "path": "public/config/delivery.ini",
+      "type": "設定",
+      "purpose": "配信設定の作業用控え",
+      "creator": "制作会社の担当",
+      "created": "2026-11-15",
+      "intent": "不明"
+    },
+    {
+      "path": "public/notes/work.txt",
+      "type": "メモ",
+      "purpose": "保守作業の途中経過",
+      "creator": "保守担当",
+      "created": "2026-11-01",
+      "intent": "不明"
+    },
+    {
+      "path": "public/sheets/schedule.xlsx",
+      "type": "表計算",
+      "purpose": "社員の担当予定表",
+      "creator": "E10 総務",
+      "created": "2026-11-02",
+      "intent": "決めていない"
+    },
+    {
+      "path": "public/sheets/cost.ods",
+      "type": "表計算",
+      "purpose": "店内用の費用集計表",
+      "creator": "E06 経理",
+      "created": "2026-11-03",
+      "intent": "決めていない"
+    },
+    {
+      "path": "public/scripts/site.js.map",
+      "type": "ソースマップ",
+      "purpose": "画面の調整用対応表",
+      "creator": "制作会社の担当",
+      "created": "2026-11-04",
+      "intent": "不明"
+    },
+    {
+      "path": "public/misc/q7r2.csv",
+      "type": "会員データ",
+      "purpose": "名前を変更した会員一覧の作業用書き出し",
+      "creator": "E04 受付",
+      "created": "2026-11-05",
+      "intent": "決めていない"
+    },
+    {
+      "path": "public/unlinked/member-copy.csv",
+      "type": "会員データ",
+      "purpose": "画面のリンクを外した会員一覧の控え",
+      "creator": "E03 受付",
+      "created": "2026-11-06",
+      "intent": "決めていない"
+    },
+    {
+      "path": "public/private/work-copy.zip",
+      "type": "バックアップ",
+      "purpose": "配信範囲を未確認のバックアップ",
+      "creator": "保守担当",
+      "created": "2026-11-07",
+      "intent": "不明"
+    },
+    {
+      "path": "public/docs/pending.pdf",
+      "type": "PDF",
+      "purpose": null,
+      "creator": "E02 副店長",
+      "created": "2026-11-08",
+      "intent": "不明"
+    }
+  ],
+  "revised": [
+    {
+      "path": "public/index.html",
+      "type": "HTML",
+      "purpose": "店舗案内の入口",
+      "creator": "制作会社の担当",
+      "created": "2026-11-01",
+      "intent": "決めた"
+    },
+    {
+      "path": "public/styles/site.css",
+      "type": "CSS",
+      "purpose": "店舗案内の装飾",
+      "creator": "制作会社の担当",
+      "created": "2026-11-02",
+      "intent": "決めた"
+    },
+    {
+      "path": "private/images/shop.jpg",
+      "type": "画像",
+      "purpose": "店舗外観の公開用画像",
+      "creator": "E05 Web担当",
+      "created": "2026-11-03",
+      "intent": "決めた"
+    },
+    {
+      "path": "private/images/access.jpg",
+      "type": "画像",
+      "purpose": "来店経路の公開用画像",
+      "creator": "E05 Web担当",
+      "created": "2026-11-04",
+      "intent": "決めた"
+    },
+    {
+      "path": "private/docs/guide.pdf",
+      "type": "PDF",
+      "purpose": "店内利用案内の公開資料",
+      "creator": "E01 店長",
+      "created": "2026-11-05",
+      "intent": "決めた"
+    },
+    {
+      "path": "private/docs/event.pdf",
+      "type": "PDF",
+      "purpose": "公開を決めた催事案内",
+      "creator": "E02 副店長",
+      "created": "2026-11-06",
+      "intent": "決めた"
+    },
+    {
+      "path": "private/calendar/open-days.csv",
+      "type": "CSV",
+      "purpose": "一般公開を決めた営業日カレンダー",
+      "creator": "E05 Web担当",
+      "created": "2026-11-07",
+      "intent": "決めた"
+    },
+    {
+      "path": "private/downloads/print-kit.zip",
+      "type": "ZIP",
+      "purpose": "一般公開を決めた案内画像の配布用一式",
+      "creator": "E05 Web担当",
+      "created": "2026-11-08",
+      "intent": "決めた"
+    },
+    {
+      "path": "private/exports/members-2026-11-01.csv",
+      "type": "会員データ",
+      "purpose": "会員一覧の引き継ぎ用書き出し",
+      "creator": "E03 受付",
+      "created": "2026-11-09",
+      "intent": "決めていない"
+    },
+    {
+      "path": "private/exports/members-2026-11-08.csv",
+      "type": "会員データ",
+      "purpose": "会員一覧の集計前書き出し",
+      "creator": "E04 受付",
+      "created": "2026-11-10",
+      "intent": "決めていない"
+    },
+    {
+      "path": "private/exports/members-2026-11-15.csv",
+      "type": "会員データ",
+      "purpose": "会員一覧の月中確認用書き出し",
+      "creator": "E03 受付",
+      "created": "2026-11-11",
+      "intent": "不明"
+    },
+    {
+      "path": "private/backup/before-work.zip",
+      "type": "ZIP",
+      "purpose": "作業前バックアップ",
+      "creator": "保守担当",
+      "created": "2026-11-12",
+      "intent": "決めていない"
+    },
+    {
+      "path": "private/backup/layout-old.zip",
+      "type": "ZIP",
+      "purpose": "レイアウト変更前のバックアップ",
+      "creator": "制作会社の担当",
+      "created": "2026-11-13",
+      "intent": "不明"
+    },
+    {
+      "path": "private/config/store.env",
+      "type": "設定",
+      "purpose": "店舗サイトの実行設定の控え",
+      "creator": "保守担当",
+      "created": "2026-11-14",
+      "intent": "決めていない"
+    },
+    {
+      "path": "private/config/delivery.ini",
+      "type": "設定",
+      "purpose": "配信設定の作業用控え",
+      "creator": "制作会社の担当",
+      "created": "2026-11-15",
+      "intent": "不明"
+    },
+    {
+      "path": "private/notes/handover.md",
+      "type": "メモ",
+      "purpose": "制作会社との引き継ぎメモ",
+      "creator": "E05 Web担当",
+      "created": "2026-11-16",
+      "intent": "決めていない"
+    },
+    {
+      "path": "private/notes/work.txt",
+      "type": "メモ",
+      "purpose": "保守作業の途中経過",
+      "creator": "保守担当",
+      "created": "2026-11-01",
+      "intent": "不明"
+    },
+    {
+      "path": "private/sheets/schedule.xlsx",
+      "type": "表計算",
+      "purpose": "社員の担当予定表",
+      "creator": "E10 総務",
+      "created": "2026-11-02",
+      "intent": "決めていない"
+    },
+    {
+      "path": "private/sheets/cost.ods",
+      "type": "表計算",
+      "purpose": "店内用の費用集計表",
+      "creator": "E06 経理",
+      "created": "2026-11-03",
+      "intent": "決めていない"
+    },
+    {
+      "path": "private/scripts/site.js.map",
+      "type": "ソースマップ",
+      "purpose": "画面の調整用対応表",
+      "creator": "制作会社の担当",
+      "created": "2026-11-04",
+      "intent": "不明"
+    },
+    {
+      "path": "private/misc/q7r2.csv",
+      "type": "会員データ",
+      "purpose": "名前を変更した会員一覧の作業用書き出し",
+      "creator": "E04 受付",
+      "created": "2026-11-05",
+      "intent": "決めていない"
+    },
+    {
+      "path": "private/unlinked/member-copy.csv",
+      "type": "会員データ",
+      "purpose": "画面のリンクを外した会員一覧の控え",
+      "creator": "E03 受付",
+      "created": "2026-11-06",
+      "intent": "決めていない"
+    },
+    {
+      "path": "private/private/work-copy.zip",
+      "type": "バックアップ",
+      "purpose": "配信範囲を未確認のバックアップ",
+      "creator": "保守担当",
+      "created": "2026-11-07",
+      "intent": "不明"
+    },
+    {
+      "path": "private/docs/pending.pdf",
+      "type": "PDF",
+      "purpose": null,
+      "creator": "E02 副店長",
+      "created": "2026-11-08",
+      "intent": "不明"
+    }
+  ],
+  "teaching": [
+    {
+      "path": "public/index.html",
+      "type": "HTML",
+      "purpose": "店舗案内の入口",
+      "creator": "制作会社の担当",
+      "created": "2026-11-01",
+      "intent": "決めた"
+    },
+    {
+      "path": "public/styles/site.css",
+      "type": "CSS",
+      "purpose": "店舗案内の装飾",
+      "creator": "制作会社の担当",
+      "created": "2026-11-02",
+      "intent": "決めた"
+    },
+    {
+      "path": "public/images/shop.jpg",
+      "type": "画像",
+      "purpose": "店舗外観の公開用画像",
+      "creator": "E05 Web担当",
+      "created": "2026-11-03",
+      "intent": "決めた"
+    },
+    {
+      "path": "public/images/access.jpg",
+      "type": "画像",
+      "purpose": "来店経路の公開用画像",
+      "creator": "E05 Web担当",
+      "created": "2026-11-04",
+      "intent": "決めた"
+    },
+    {
+      "path": "public/docs/guide.pdf",
+      "type": "PDF",
+      "purpose": "店内利用案内の公開資料",
+      "creator": "E01 店長",
+      "created": "2026-11-05",
+      "intent": "決めた"
+    },
+    {
+      "path": "public/docs/event.pdf",
+      "type": "PDF",
+      "purpose": "公開を決めた催事案内",
+      "creator": "E02 副店長",
+      "created": "2026-11-06",
+      "intent": "決めた"
+    },
+    {
+      "path": "public/calendar/open-days.csv",
+      "type": "CSV",
+      "purpose": "一般公開を決めた営業日カレンダー",
+      "creator": "E05 Web担当",
+      "created": "2026-11-07",
+      "intent": "決めた"
+    },
+    {
+      "path": "public/downloads/print-kit.zip",
+      "type": "ZIP",
+      "purpose": "一般公開を決めた案内画像の配布用一式",
+      "creator": "E05 Web担当",
+      "created": "2026-11-08",
+      "intent": "決めた"
+    },
+    {
+      "path": "public/exports/members-2026-11-01.csv",
+      "type": "会員データ",
+      "purpose": "会員一覧の引き継ぎ用書き出し",
+      "creator": "E03 受付",
+      "created": "2026-11-09",
+      "intent": "決めていない"
+    },
+    {
+      "path": "public/exports/members-2026-11-08.csv",
+      "type": "会員データ",
+      "purpose": "会員一覧の集計前書き出し",
+      "creator": "E04 受付",
+      "created": "2026-11-10",
+      "intent": "決めていない"
+    },
+    {
+      "path": "public/exports/members-2026-11-15.csv",
+      "type": "会員データ",
+      "purpose": "会員一覧の月中確認用書き出し",
+      "creator": "E03 受付",
+      "created": "2026-11-11",
+      "intent": "不明"
+    },
+    {
+      "path": "public/backup/before-work.zip",
+      "type": "ZIP",
+      "purpose": "作業前バックアップ",
+      "creator": "保守担当",
+      "created": "2026-11-12",
+      "intent": "決めていない"
+    },
+    {
+      "path": "public/backup/layout-old.zip",
+      "type": "ZIP",
+      "purpose": "レイアウト変更前のバックアップ",
+      "creator": "制作会社の担当",
+      "created": "2026-11-13",
+      "intent": "不明"
+    },
+    {
+      "path": "public/config/store.env",
+      "type": "設定",
+      "purpose": "店舗サイトの実行設定の控え",
+      "creator": "保守担当",
+      "created": "2026-11-14",
+      "intent": "決めていない"
+    },
+    {
+      "path": "public/config/delivery.ini",
+      "type": "設定",
+      "purpose": "配信設定の作業用控え",
+      "creator": "制作会社の担当",
+      "created": "2026-11-15",
+      "intent": "不明"
+    },
+    {
+      "path": "public/notes/handover.md",
+      "type": "メモ",
+      "purpose": "制作会社との引き継ぎメモ",
+      "creator": "E05 Web担当",
+      "created": "2026-11-16",
+      "intent": "決めていない"
+    },
+    {
+      "path": "public/notes/work.txt",
+      "type": "メモ",
+      "purpose": "保守作業の途中経過",
+      "creator": "保守担当",
+      "created": "2026-11-01",
+      "intent": "不明"
+    },
+    {
+      "path": "public/sheets/schedule.xlsx",
+      "type": "表計算",
+      "purpose": "社員の担当予定表",
+      "creator": "E10 総務",
+      "created": "2026-11-02",
+      "intent": "決めていない"
+    },
+    {
+      "path": "public/sheets/cost.ods",
+      "type": "表計算",
+      "purpose": "店内用の費用集計表",
+      "creator": "E06 経理",
+      "created": "2026-11-03",
+      "intent": "決めていない"
+    },
+    {
+      "path": "public/scripts/site.js.map",
+      "type": "ソースマップ",
+      "purpose": "画面の調整用対応表",
+      "creator": "制作会社の担当",
+      "created": "2026-11-04",
+      "intent": "不明"
+    },
+    {
+      "path": "public/misc/q7r2.csv",
+      "type": "会員データ",
+      "purpose": "名前を変更した会員一覧の作業用書き出し",
+      "creator": "E04 受付",
+      "created": "2026-11-05",
+      "intent": "決めていない"
+    },
+    {
+      "path": "public/unlinked/member-copy.csv",
+      "type": "会員データ",
+      "purpose": "画面のリンクを外した会員一覧の控え",
+      "creator": "E03 受付",
+      "created": "2026-11-06",
+      "intent": "決めていない"
+    },
+    {
+      "path": "public/private/work-copy.zip",
+      "type": "バックアップ",
+      "purpose": "配信範囲を未確認のバックアップ",
+      "creator": "保守担当",
+      "created": "2026-11-07",
+      "intent": "不明"
+    },
+    {
+      "path": "public/docs/pending.pdf",
+      "type": "PDF",
+      "purpose": null,
+      "creator": "E02 副店長",
+      "created": "2026-11-08",
+      "intent": "不明"
+    }
+  ]
+}

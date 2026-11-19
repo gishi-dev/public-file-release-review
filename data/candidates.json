@@ -1,0 +1,517 @@
+{
+  "initial": [
+    {
+      "path": "public/index.html",
+      "reason": "public/index.html は、店舗案内の入口として公開を決めています。公開対象の版と担当の承認記録を照合してください。",
+      "questions": [
+        "制作会社の担当に、店舗案内の入口として掲出するHTMLの版と、店長が承認した日を確認してください。"
+      ]
+    },
+    {
+      "path": "public/styles/site.css",
+      "reason": "public/styles/site.css は、店舗案内の装飾として公開を決めています。配信する版と参照先が承認範囲かを確認してください。",
+      "questions": [
+        "制作会社の担当に、店舗案内から参照している装飾用CSSが今回の配信用の版かを確認してください。"
+      ]
+    },
+    {
+      "path": "public/images/shop.jpg",
+      "reason": "public/images/shop.jpg は、外観画像の公開意図が記録されています。画像の利用範囲を制作会社に確認してください。",
+      "questions": [
+        "制作会社の担当に、店舗外観の写真を店舗案内以外のページにも掲載できるか確認してください。"
+      ]
+    },
+    {
+      "path": "public/images/access.jpg",
+      "reason": "public/images/access.jpg は、経路画像として公開を決めています。案内の掲載期間を店内で確認してください。",
+      "questions": [
+        "制作会社の担当に、来店経路の画像をいつ差し替える予定か、旧画像の掲載をいつ終了するか確認してください。"
+      ]
+    },
+    {
+      "path": "public/docs/guide.pdf",
+      "reason": "public/docs/guide.pdf は、利用案内として公開を決めています。差し替え前の資料の扱いは別途確認が必要です。",
+      "questions": [
+        "制作会社の担当に、店内利用案内の差し替え前のPDFに対する案内先と、旧版の配信を止める日を確認してください。"
+      ]
+    },
+    {
+      "path": "public/docs/event.pdf",
+      "reason": "public/docs/event.pdf は、催事案内の公開意図はあります。催事終了後の配信期間を副店長に確認してください。",
+      "questions": [
+        "制作会社の担当に、催事案内PDFを催事終了後も掲載するか、副店長が決めた掲載期限を確認してください。"
+      ]
+    },
+    {
+      "path": "public/calendar/open-days.csv",
+      "reason": "public/calendar/open-days.csv は、営業日カレンダーは一般公開を決めた資料です。CSV形式だけを理由に削除する判断はできません。",
+      "questions": [
+        "制作会社の担当に、営業日カレンダーCSVが公開承認を受けた版か、次回の更新を誰が行うか確認してください。"
+      ]
+    },
+    {
+      "path": "public/downloads/print-kit.zip",
+      "reason": "public/downloads/print-kit.zip は、案内画像の配布用一式は一般公開を決めています。ZIP形式だけでは不要かどうかは決まりません。",
+      "questions": [
+        "制作会社の担当に、配布用ZIPの収録対象が公開を承認した案内画像の一覧と一致するか、公開前に誰が照合するか確認してください。"
+      ]
+    },
+    {
+      "path": "public/exports/members-2026-11-01.csv",
+      "reason": "public/exports/members-2026-11-01.csv は、引き継ぎ用の会員一覧で公開を決めていません。引き継ぎ相手と保管期限を受付に確認してください。",
+      "questions": [
+        "保守担当に、11月1日の引き継ぎ用会員CSVを受付の引き継ぎ先だけが取得できるか、引き継ぎ後の保管期限と削除担当を確認してください。"
+      ]
+    },
+    {
+      "path": "public/exports/members-2026-11-08.csv",
+      "reason": "public/exports/members-2026-11-08.csv は、集計前の会員一覧で公開の承認はありません。集計後の保管と取得制限の担当を確認してください。",
+      "questions": [
+        "保守担当に、11月8日の集計前会員CSVを集計後も保管する必要があるか、受け取った端末の控えを誰が整理するか確認してください。"
+      ]
+    },
+    {
+      "path": "public/exports/members-2026-11-15.csv",
+      "reason": "public/exports/members-2026-11-15.csv は、月中確認用の会員一覧で公開意図は不明です。受付が必要とする期間と置き場所を確認してください。",
+      "questions": [
+        "保守担当に、11月15日の月中確認用会員CSVを公開側から外せるか、過去の配信物やキャッシュの扱いを誰が判断するか確認してください。"
+      ]
+    },
+    {
+      "path": "public/backup/before-work.zip",
+      "reason": "public/backup/before-work.zip は、作業前のバックアップで公開を決めていません。公開場所から外すことと保管の廃止は別の判断です。",
+      "questions": [
+        "保守担当に、作業前バックアップの復元に使う保管先と保持期限を確認してください。公開側の控えを外す前に復元用のコピーが残るかも確認してください。"
+      ]
+    },
+    {
+      "path": "public/backup/layout-old.zip",
+      "reason": "public/backup/layout-old.zip は、変更前のバックアップで公開意図が不明です。復元用の保管先と保持期間を確認してください。",
+      "questions": [
+        "制作会社の担当に、旧レイアウトに戻せる期間と、その期間中のバックアップの保管先を確認してください。"
+      ]
+    },
+    {
+      "path": "public/config/store.env",
+      "reason": "public/config/store.env は、実行設定の控えは公開を決めていません。値はこの一覧に含まれず、公開範囲の確認が必要です。",
+      "questions": [
+        "保守担当に、店舗サイトの実行設定の控えが静的ファイルの配信対象に含まれるか、除外したあと取得処理でも拒否されるか確認してください。"
+      ]
+    },
+    {
+      "path": "public/config/delivery.ini",
+      "reason": "public/config/delivery.ini は、配信設定の作業用控えで公開意図は不明です。作業用資料を配信する必要があるか確認してください。",
+      "questions": [
+        "制作会社の担当に、配信設定の作業用控えを公開用の成果物から外せるか、運用に必要な控えを誰に渡すか確認してください。"
+      ]
+    },
+    {
+      "path": "public/notes/handover.md",
+      "reason": "public/notes/handover.md は、引き継ぎメモの公開を決めていません。制作会社への共有先とサイトの公開先を分けて確認してください。",
+      "questions": [
+        "制作会社の担当に、引き継ぎメモを閲覧する担当と、公開フォルダーから切り離した共有先を確認してください。"
+      ]
+    },
+    {
+      "path": "public/notes/work.txt",
+      "reason": "public/notes/work.txt は、保守の途中経過のメモで公開意図は不明です。作業終了後の保管場所を確認してください。",
+      "questions": [
+        "保守担当に、保守作業の途中経過を最終報告へまとめたあと、作業メモをどこに保管するか確認してください。"
+      ]
+    },
+    {
+      "path": "public/sheets/schedule.xlsx",
+      "reason": "public/sheets/schedule.xlsx は、社員の担当予定を扱う表で公開を決めていません。総務に共有範囲を確認してください。",
+      "questions": [
+        "制作会社の担当に、社員の担当予定表が配信対象に含まれているか、総務だけが管理する置き場所に分けられるか確認してください。"
+      ]
+    },
+    {
+      "path": "public/sheets/cost.ods",
+      "reason": "public/sheets/cost.ods は、店内用の費用集計で公開を決めていません。経理の保管方針と配信範囲を確認してください。",
+      "questions": [
+        "保守担当に、費用集計表を公開側の配信設定から外す作業の担当と、経理へ渡した控えの保管先を確認してください。"
+      ]
+    },
+    {
+      "path": "public/scripts/site.js.map",
+      "reason": "public/scripts/site.js.map は、調整用の対応表で公開意図は不明です。制作工程の資料を配信に含める意図を確認してください。",
+      "questions": [
+        "制作会社の担当に、画面調整用のソースマップを公開版の成果物に含める取り決めがあるか確認してください。"
+      ]
+    },
+    {
+      "path": "public/misc/q7r2.csv",
+      "reason": "public/misc/q7r2.csv は、名前を変えた会員一覧で公開を決めていません。名前の分かりにくさは取得制限の確認になりません。",
+      "questions": [
+        "保守担当に、名前を変更した会員CSVを配信対象から外せるか、変更前後に配信した控えの確認を誰が担当するか確認してください。"
+      ]
+    },
+    {
+      "path": "public/unlinked/member-copy.csv",
+      "reason": "public/unlinked/member-copy.csv は、リンクを外した会員一覧で公開を決めていません。画面のリンク以外の取得経路も保守担当に確認してください。",
+      "questions": [
+        "保守担当に、リンクを外した会員CSVを取得処理で拒否できるか、以前の配信物の扱いを誰が判断するか確認してください。"
+      ]
+    },
+    {
+      "path": "public/private/work-copy.zip",
+      "reason": "public/private/work-copy.zip は、バックアップで公開意図は不明です。フォルダー名だけでは配信の対象外か分かりません。",
+      "questions": [
+        "保守担当に、バックアップがある下位フォルダーを配信設定と取得処理の両方で除外しているか確認してください。"
+      ]
+    },
+    {
+      "path": "public/docs/pending.pdf",
+      "reason": "public/docs/pending.pdf は、用途が未確認で公開意図も不明です。副店長に資料の用途と掲載の承認を確認してください。",
+      "questions": [
+        "制作会社の担当に、用途未確認のPDFがどの納品物に含まれていたか、掲載の承認を副店長に照会できるか確認してください。"
+      ]
+    }
+  ],
+  "revised": [
+    {
+      "path": "public/index.html",
+      "reason": "public/index.html は、店舗案内の入口として公開を決めています。公開対象の版と担当の承認記録を照合してください。",
+      "questions": [
+        "制作会社の担当に、公開側に残した店舗案内HTMLが店長の承認した版と一致するか確認してください。"
+      ]
+    },
+    {
+      "path": "public/styles/site.css",
+      "reason": "public/styles/site.css は、店舗案内の装飾として公開を決めています。配信する版と参照先が承認範囲かを確認してください。",
+      "questions": [
+        "制作会社の担当に、公開側に残したCSSが店舗案内用の版か、非公開側へ移した素材を参照していないか確認してください。"
+      ]
+    },
+    {
+      "path": "private/images/shop.jpg",
+      "reason": "private/images/shop.jpg は、外観画像の公開意図が記録されています。画像の利用範囲を制作会社に確認してください。",
+      "questions": [
+        "制作会社の担当に、非公開側の店舗外観画像を再掲載する予定があるか、掲載先を誰が決めるか確認してください。"
+      ]
+    },
+    {
+      "path": "private/images/access.jpg",
+      "reason": "private/images/access.jpg は、経路画像として公開を決めています。案内の掲載期間を店内で確認してください。",
+      "questions": [
+        "制作会社の担当に、非公開側の来店経路画像が現行の案内に対応するか、次に掲載する前に誰が経路を照合するか確認してください。"
+      ]
+    },
+    {
+      "path": "private/docs/guide.pdf",
+      "reason": "private/docs/guide.pdf は、利用案内として公開を決めています。差し替え前の資料の扱いは別途確認が必要です。",
+      "questions": [
+        "制作会社の担当に、差し替え後の店内利用案内を再掲する予定と、以前配信した旧版の扱いを誰が決めるか確認してください。"
+      ]
+    },
+    {
+      "path": "private/docs/event.pdf",
+      "reason": "private/docs/event.pdf は、催事案内の公開意図はあります。催事終了後の配信期間を副店長に確認してください。",
+      "questions": [
+        "制作会社の担当に、催事案内の再掲載が必要か、再掲載する場合の終了日を副店長と確認してください。"
+      ]
+    },
+    {
+      "path": "private/calendar/open-days.csv",
+      "reason": "private/calendar/open-days.csv は、一般公開を決めた営業日カレンダーです。CSV形式だけを理由に削除する判断はできません。",
+      "questions": [
+        "制作会社の担当に、非公開側に移した営業日CSVを次回の営業日更新に使うか、再配信の承認を誰が行うか確認してください。"
+      ]
+    },
+    {
+      "path": "private/downloads/print-kit.zip",
+      "reason": "private/downloads/print-kit.zip は、一般公開を決めた案内画像の配布用一式です。ZIP形式だけでは不要かどうかは決まりません。",
+      "questions": [
+        "制作会社の担当に、案内画像の配布用ZIPを再公開する際、収録画像と承認済みの画像一覧を誰が照合するか確認してください。"
+      ]
+    },
+    {
+      "path": "private/exports/members-2026-11-01.csv",
+      "reason": "private/exports/members-2026-11-01.csv は、引き継ぎ用の会員一覧で公開を決めていません。引き継ぎ相手と保管期限を受付に確認してください。",
+      "questions": [
+        "保守担当に、11月1日の引き継ぎ用会員CSVを受付の引き継ぎ先だけが取得できるか、引き継ぎ後の保存期限と削除担当を確認してください。"
+      ]
+    },
+    {
+      "path": "private/exports/members-2026-11-08.csv",
+      "reason": "private/exports/members-2026-11-08.csv は、集計前の会員一覧で公開の承認はありません。集計後の保管と取得制限の担当を確認してください。",
+      "questions": [
+        "保守担当に、11月8日の集計前会員CSVを集計確定後にいつ削除するか、受領した端末側の控えも削除対象に含めるか確認してください。"
+      ]
+    },
+    {
+      "path": "private/exports/members-2026-11-15.csv",
+      "reason": "private/exports/members-2026-11-15.csv は、月中確認用の会員一覧で公開意図は不明です。受付が必要とする期間と置き場所を確認してください。",
+      "questions": [
+        "保守担当に、11月15日の月中確認用会員CSVを次回の確認まで保持する必要があるか、非公開側の取得権限を誰が見直すか確認してください。"
+      ]
+    },
+    {
+      "path": "private/backup/before-work.zip",
+      "reason": "private/backup/before-work.zip は、作業前のバックアップで公開を決めていません。公開場所から外すことと保管の廃止は別の判断です。",
+      "questions": [
+        "保守担当に、復元に使う作業前バックアップの保管先と保持期限を確認してください。移す判断の前に、以前の公開側の控えが配信設定から外れたかも確認してください。"
+      ]
+    },
+    {
+      "path": "private/backup/layout-old.zip",
+      "reason": "private/backup/layout-old.zip は、変更前のバックアップで公開意図が不明です。復元用の保管先と保持期間を確認してください。",
+      "questions": [
+        "制作会社の担当に、レイアウト変更前の状態へ戻す必要がある期間と、復元に使う控えを取得できる担当を確認してください。"
+      ]
+    },
+    {
+      "path": "private/config/store.env",
+      "reason": "private/config/store.env は、公開を決めていない実行設定の控えです。値はこの一覧に含まれず、公開範囲の確認が必要です。",
+      "questions": [
+        "保守担当に、店舗サイトの実行設定の控えが新しい配信範囲から外れているか、取得処理でも返されない設定か確認してください。"
+      ]
+    },
+    {
+      "path": "private/config/delivery.ini",
+      "reason": "private/config/delivery.ini は、配信設定の作業用控えで公開意図は不明です。作業用資料を配信する必要があるか確認してください。",
+      "questions": [
+        "制作会社の担当に、配信設定の作業用控えを今後の納品物から除くか、更新時に保守担当とどこで共有するか確認してください。"
+      ]
+    },
+    {
+      "path": "private/notes/handover.md",
+      "reason": "private/notes/handover.md は、引き継ぎメモの公開を決めていません。制作会社への共有先とサイトの公開先を分けて確認してください。",
+      "questions": [
+        "制作会社の担当に、非公開側の引き継ぎメモを誰が閲覧するか、引き継ぎ完了後の控えをどちらが管理するか確認してください。"
+      ]
+    },
+    {
+      "path": "private/notes/work.txt",
+      "reason": "private/notes/work.txt は、保守の途中経過のメモで公開意図は不明です。作業終了後の保管場所を確認してください。",
+      "questions": [
+        "保守担当に、途中経過のメモを最終報告に反映したか、反映後にいつまで作業用の控えを保持するか確認してください。"
+      ]
+    },
+    {
+      "path": "private/sheets/schedule.xlsx",
+      "reason": "private/sheets/schedule.xlsx は、社員の担当予定を扱う表で公開を決めていません。総務に共有範囲を確認してください。",
+      "questions": [
+        "保守担当に、非公開側の社員の担当予定表を総務が指定した役割だけで閲覧できるか確認してください。"
+      ]
+    },
+    {
+      "path": "private/sheets/cost.ods",
+      "reason": "private/sheets/cost.ods は、店内用の費用集計で公開を決めていません。経理の保管方針と配信範囲を確認してください。",
+      "questions": [
+        "保守担当に、非公開側の費用集計表を経理の保管先に引き渡したか、以前の配信物の扱いを誰が確認するか確認してください。"
+      ]
+    },
+    {
+      "path": "private/scripts/site.js.map",
+      "reason": "private/scripts/site.js.map は、調整用の対応表で公開意図は不明です。制作工程の資料を配信に含める意図を確認してください。",
+      "questions": [
+        "制作会社の担当に、公開向けの成果物に調整用ソースマップを含めない設定になっているか確認してください。"
+      ]
+    },
+    {
+      "path": "private/misc/q7r2.csv",
+      "reason": "private/misc/q7r2.csv は、名前を変えた会員一覧で公開を決めていません。名前の分かりにくさは取得制限の確認になりません。",
+      "questions": [
+        "保守担当に、名前を変更した会員CSVの現在の取得制限と、変更前の名前で配信した控えやキャッシュを誰が取り扱うか確認してください。"
+      ]
+    },
+    {
+      "path": "private/unlinked/member-copy.csv",
+      "reason": "private/unlinked/member-copy.csv は、リンクを外した会員一覧で公開を決めていません。画面のリンク以外の取得経路も保守担当に確認してください。",
+      "questions": [
+        "保守担当に、リンクを外した会員CSVの取得をサーバー側の処理でも拒否するか、過去に受け取った端末の控えを誰が確認するか確認してください。"
+      ]
+    },
+    {
+      "path": "private/private/work-copy.zip",
+      "reason": "private/private/work-copy.zip は、バックアップで公開意図は不明です。フォルダー名だけでは配信の対象外か分かりません。",
+      "questions": [
+        "保守担当に、非公開側の下位フォルダーを配信範囲と取得処理の両方から除いたか、復元用のバックアップの保持期限も確認してください。"
+      ]
+    },
+    {
+      "path": "private/docs/pending.pdf",
+      "reason": "private/docs/pending.pdf は、用途が未確認で公開意図も不明です。副店長に資料の用途と掲載の承認を確認してください。",
+      "questions": [
+        "制作会社の担当に、用途未確認のPDFを作った目的を副店長に照会し、確認が済むまで配信対象から外れているか確認してください。"
+      ]
+    }
+  ],
+  "teaching": [
+    {
+      "path": "public/index.html",
+      "reason": "public/index.html は、店舗案内の入口として公開を決めています。公開対象の版と担当の承認記録を照合してください。",
+      "questions": [
+        "制作会社の担当に、店舗案内の入口として掲出するHTMLの版と、店長が承認した日を確認してください。"
+      ]
+    },
+    {
+      "path": "public/styles/site.css",
+      "reason": "public/styles/site.css は、店舗案内の装飾として公開を決めています。配信する版と参照先が承認範囲かを確認してください。",
+      "questions": [
+        "制作会社の担当に、店舗案内から参照している装飾用CSSが今回の配信用の版かを確認してください。"
+      ]
+    },
+    {
+      "path": "public/images/shop.jpg",
+      "reason": "public/images/shop.jpg は、外観画像の公開意図が記録されています。画像の利用範囲を制作会社に確認してください。",
+      "questions": [
+        "制作会社の担当に、店舗外観の写真を店舗案内以外のページにも掲載できるか確認してください。"
+      ]
+    },
+    {
+      "path": "public/images/access.jpg",
+      "reason": "public/images/access.jpg は、経路画像として公開を決めています。案内の掲載期間を店内で確認してください。",
+      "questions": [
+        "制作会社の担当に、来店経路の画像をいつ差し替える予定か、旧画像の掲載をいつ終了するか確認してください。"
+      ]
+    },
+    {
+      "path": "public/docs/guide.pdf",
+      "reason": "public/docs/guide.pdf は、利用案内として公開を決めています。差し替え前の資料の扱いは別途確認が必要です。",
+      "questions": [
+        "制作会社の担当に、店内利用案内の差し替え前のPDFに対する案内先と、旧版の配信を止める日を確認してください。"
+      ]
+    },
+    {
+      "path": "public/docs/event.pdf",
+      "reason": "public/docs/event.pdf は、催事案内の公開意図はあります。催事終了後の配信期間を副店長に確認してください。",
+      "questions": [
+        "制作会社の担当に、催事案内PDFを催事終了後も掲載するか、副店長が決めた掲載期限を確認してください。"
+      ]
+    },
+    {
+      "path": "public/calendar/open-days.csv",
+      "reason": "営業日カレンダーはCSV形式のため、公開場所には残さず不要として削除する。",
+      "questions": [
+        "営業日カレンダーの削除日を制作会社に確認する。"
+      ],
+      "suggestedAction": "削除する"
+    },
+    {
+      "path": "public/downloads/print-kit.zip",
+      "reason": "public/downloads/print-kit.zip は、案内画像の配布用一式は一般公開を決めています。ZIP形式だけでは不要かどうかは決まりません。",
+      "questions": [
+        "制作会社の担当に、配布用ZIPの収録対象が公開を承認した案内画像の一覧と一致するか、公開前に誰が照合するか確認してください。"
+      ]
+    },
+    {
+      "path": "public/exports/members-2026-11-01.csv",
+      "reason": "public/exports/members-2026-11-01.csv は、引き継ぎ用の会員一覧で公開を決めていません。引き継ぎ相手と保管期限を受付に確認してください。",
+      "questions": [
+        "保守担当に、11月1日の引き継ぎ用会員CSVを受付の引き継ぎ先だけが取得できるか、引き継ぎ後の保管期限と削除担当を確認してください。"
+      ]
+    },
+    {
+      "path": "public/exports/members-2026-11-08.csv",
+      "reason": "public/exports/members-2026-11-08.csv は、集計前の会員一覧で公開の承認はありません。集計後の保管と取得制限の担当を確認してください。",
+      "questions": [
+        "保守担当に、11月8日の集計前会員CSVを集計後も保管する必要があるか、受け取った端末の控えを誰が整理するか確認してください。"
+      ]
+    },
+    {
+      "path": "public/exports/members-2026-11-15.csv",
+      "reason": "public/exports/members-2026-11-15.csv は、月中確認用の会員一覧で公開意図は不明です。受付が必要とする期間と置き場所を確認してください。",
+      "questions": [
+        "保守担当に、11月15日の月中確認用会員CSVを公開側から外せるか、過去の配信物やキャッシュの扱いを誰が判断するか確認してください。"
+      ]
+    },
+    {
+      "path": "public/backup/before-work.zip",
+      "reason": "作業前バックアップは作業が終わったので、保管先を確かめず削除する。",
+      "questions": [
+        "作業前バックアップを削除する日を保守担当に確認する。"
+      ],
+      "suggestedAction": "削除する"
+    },
+    {
+      "path": "public/backup/layout-old.zip",
+      "reason": "public/backup/layout-old.zip は、変更前のバックアップで公開意図が不明です。復元用の保管先と保持期間を確認してください。",
+      "questions": [
+        "制作会社の担当に、旧レイアウトに戻せる期間と、その期間中のバックアップの保管先を確認してください。"
+      ]
+    },
+    {
+      "path": "public/config/store.env",
+      "reason": "public/config/store.env は、実行設定の控えは公開を決めていません。値はこの一覧に含まれず、公開範囲の確認が必要です。",
+      "questions": [
+        "保守担当に、店舗サイトの実行設定の控えが静的ファイルの配信対象に含まれるか、除外したあと取得処理でも拒否されるか確認してください。"
+      ]
+    },
+    {
+      "path": "public/config/delivery.ini",
+      "reason": "public/config/delivery.ini は、配信設定の作業用控えで公開意図は不明です。作業用資料を配信する必要があるか確認してください。",
+      "questions": [
+        "制作会社の担当に、配信設定の作業用控えを公開用の成果物から外せるか、運用に必要な控えを誰に渡すか確認してください。"
+      ]
+    },
+    {
+      "path": "public/notes/handover.md",
+      "reason": "public/notes/handover.md は、引き継ぎメモの公開を決めていません。制作会社への共有先とサイトの公開先を分けて確認してください。",
+      "questions": [
+        "制作会社の担当に、引き継ぎメモを閲覧する担当と、公開フォルダーから切り離した共有先を確認してください。"
+      ]
+    },
+    {
+      "path": "public/notes/work.txt",
+      "reason": "public/notes/work.txt は、保守の途中経過のメモで公開意図は不明です。作業終了後の保管場所を確認してください。",
+      "questions": [
+        "保守担当に、保守作業の途中経過を最終報告へまとめたあと、作業メモをどこに保管するか確認してください。"
+      ]
+    },
+    {
+      "path": "public/sheets/schedule.xlsx",
+      "reason": "public/sheets/schedule.xlsx は、社員の担当予定を扱う表で公開を決めていません。総務に共有範囲を確認してください。",
+      "questions": [
+        "制作会社の担当に、社員の担当予定表が配信対象に含まれているか、総務だけが管理する置き場所に分けられるか確認してください。"
+      ]
+    },
+    {
+      "path": "public/sheets/cost.ods",
+      "reason": "public/sheets/cost.ods は、店内用の費用集計で公開を決めていません。経理の保管方針と配信範囲を確認してください。",
+      "questions": [
+        "保守担当に、費用集計表を公開側の配信設定から外す作業の担当と、経理へ渡した控えの保管先を確認してください。"
+      ]
+    },
+    {
+      "path": "public/scripts/site.js.map",
+      "reason": "public/scripts/site.js.map は、調整用の対応表で公開意図は不明です。制作工程の資料を配信に含める意図を確認してください。",
+      "questions": [
+        "制作会社の担当に、画面調整用のソースマップを公開版の成果物に含める取り決めがあるか確認してください。"
+      ]
+    },
+    {
+      "path": "public/misc/q7r2.csv",
+      "reason": "会員一覧は名前を分かりにくくしているため、この場所に残してよい。",
+      "questions": [
+        "変更後の名前を制作会社の管理表へ記録する。"
+      ],
+      "suggestedAction": "残してよい"
+    },
+    {
+      "path": "public/unlinked/member-copy.csv",
+      "reason": "会員一覧は画面のリンクを消しているため、この場所に残してよい。",
+      "questions": [
+        "画面のリンクを外した日を制作会社に確認する。"
+      ],
+      "suggestedAction": "残してよい"
+    },
+    {
+      "path": "public/private/work-copy.zip",
+      "reason": "private という名前のフォルダーにあるバックアップは配信対象外なので残してよい。",
+      "questions": [
+        "private フォルダーの名前を保守の管理表に記録する。"
+      ],
+      "suggestedAction": "残してよい"
+    },
+    {
+      "path": "public/docs/pending.pdf",
+      "reason": "public/docs/pending.pdf は、用途が未確認で公開意図も不明です。副店長に資料の用途と掲載の承認を確認してください。",
+      "questions": [
+        "制作会社の担当に、用途未確認のPDFがどの納品物に含まれていたか、掲載の承認を副店長に照会できるか確認してください。"
+      ]
+    }
+  ]
+}
